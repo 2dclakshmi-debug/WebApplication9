@@ -20,15 +20,7 @@
                         <asp:RequiredFieldValidator ID="rfvname" ControlToValidate="txtname" ForeColor="Red" runat="server" ErrorMessage="please enter name"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
-                  <%--<tr>
-                      <td>Gender :</td>
-                    <td> 
-                        <asp:RadioButton ID="rbmale" runat="server"/>Male<br />
-                         <asp:RequiredFieldValidator ID="rfvgender" ForeColor="Red" runat="server" ErrorMessage="please selectcourse"></asp:RequiredFieldValidator>
-                        <asp:RadioButton ID="rbfemale" runat="server" />Female<br />
-                        <asp:RadioButton ID="rbother" runat="server" />OTHER<br />
-                   </td>
-                  </tr>--%>
+                
 
                 <tr>
                     <td>Course :</td>

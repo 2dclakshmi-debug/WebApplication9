@@ -67,12 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="customvalidation.aspx" />
     <Content Include="HtmlPage1.html" />
     <Content Include="validations.html" />
     <Content Include="Web.config" />
     <Content Include="validation.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="customvalidation.aspx.cs">
+      <DependentUpon>customvalidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customvalidation.aspx.designer.cs">
+      <DependentUpon>customvalidation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="validation.aspx.cs">
       <DependentUpon>validation.aspx</DependentUpon>

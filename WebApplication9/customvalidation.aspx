@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="validation.aspx.cs" Inherits="WebApplication9.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="customvalidation.aspx.cs" Inherits="WebApplication9.customvalidation" %>
 
 <!DOCTYPE html>
 
@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <table align="center" border="1" style:"accent-color">
+                        <table align="center" border="1" style:"accent-color">
                 <tr>
                     <td>
             <table align="center" border="1">
@@ -52,7 +52,7 @@
                 <td>
                   <asp:TextBox ID="txtage" runat="server" ></asp:TextBox>
                   <asp:RequiredFieldValidator ID="rfvage" ForeColor="Red" ControlToValidate="txtage" runat="server" ErrorMessage="please enter age"></asp:RequiredFieldValidator>
-                    <asp:RangeValidator ID="rvage" ControlToValidate="txtage" MinimumValue="18" MaximumValue="30" runat="server" ForeColor="Red" ErrorMessage="please enter valid age"></asp:RangeValidator>
+                    <asp:CustomValidator ID="cvage" runat="server" ControlToValidate="txtage" ErrorMessage="age must be between 18 and 60" ForeColor="Red" OnServerValidate="cvage_ServerValidate"></asp:CustomValidator>
 
                 </td>
                      </tr>
@@ -77,19 +77,17 @@
             </table>
             <table align="center">
                 <tr>
-                    <td><asp:Button ID="btnsubmit" runat="server" Text="Submit" OnClick="btnsubmit_Click" /></td>
+                    <td><asp:Button ID="btnsubmit" runat="server" CausesValidation="true" Text ="Submit" OnClick="btnsubmit_Click" /></td>
                 </tr>
             </table>
              <table align="center">
                 <tr>
-                 <td><asp:Label ID="lblmsg" runat="server"  /></td>
+                 <td><asp:Label ID="lblmsg" runat="server" /></td>
                </tr>
             </table>
 </td>
- </tr>
-
-            </table>
-
+                    </tr>
+                            </table>
         </div>
     </form>
 </body>

@@ -67,8 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="colspan row span.html" />
     <Content Include="customvalidation.aspx" />
     <Content Include="HtmlPage1.html" />
+    <Content Include="pexels-silvia-marcoschamer-3125787-35877496.jpg" />
     <Content Include="validations.html" />
     <Content Include="Web.config" />
     <Content Include="validation.aspx" />
